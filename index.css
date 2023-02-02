@@ -285,6 +285,9 @@ h2 {
   }
 }
 @media screen and (max-width: 720px) {
+  .container {
+    padding: 10px;
+  }
   .hotel_slider span {
     min-width: 80%;
   }
@@ -302,6 +305,9 @@ h2 {
   .flight_price {
     flex-wrap: wrap;
     gap: 20px;
+  }
+  .flight_price {
+    display: block;
   }
   .flight_timing {
     gap: 10px;
@@ -321,7 +327,9 @@ h2 {
     height: 40px;
     border-radius: 50%;
   }
-
+  .flight_name > img {
+    margin-right: 5px;
+  }
   .banner {
     background-image: url("src/mobile-banner.jpg");
     background-repeat: no-repeat;
@@ -336,6 +344,7 @@ h2 {
     display: block;
     margin-bottom: 10px;
   }
+
   .primary2 {
     background: transparent;
     padding: 0;
