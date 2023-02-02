@@ -308,6 +308,7 @@ h2 {
   }
   .flight_price {
     display: block;
+    padding-left: 10px;
   }
   .flight_timing {
     gap: 10px;
