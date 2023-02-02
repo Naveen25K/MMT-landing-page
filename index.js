@@ -24,31 +24,31 @@ const hotelObj = [
     img: "src/maldives.jpg",
     name: "Furaveri IslandResort & Spa",
     price: "AED 200",
-    day: "monday",
+    day: "Monday",
   },
   {
     img: "src/maldives2.jpg",
     name: "Furaveri IslandResort & Spa",
     price: "AED 200",
-    day: "tuesday",
+    day: "Tuesday",
   },
   {
     img: "src/maldives3.jpg",
     name: "Furaveri IslandResort & Spa",
     price: "AED 200",
-    day: "wednesday",
+    day: "Wednesday",
   },
   {
     img: "src/maldives4.jpg",
     name: "Furaveri IslandResort & Spa",
     price: "AED 200",
-    day: "thrusday",
+    day: "Thursday",
   },
   {
     img: "src/maldives5.jpg",
     name: "Furaveri IslandResort & Spa",
     price: "AED 200",
-    day: "friday",
+    day: "Friday",
   },
   {
     img: "src/maldives6.jpg",
@@ -60,7 +60,7 @@ const hotelObj = [
     img: "src/maldives7.jpg",
     name: "Furaveri IslandResort & Spa",
     price: "AED 200",
-    day: "sunday",
+    day: "Sunday",
   },
 ];
 
@@ -81,11 +81,13 @@ const loadHotels = () => {
   ];
   const d = new Date();
   const day = weekday[d.getDay()];
+  console.log(day);
 
-  const sortByDay = hotelObj.filter((val) => val.day === day.toLowerCase());
+  const sortByDay = hotelObj.filter((val) => val.day === day);
+  console.log(sortByDay);
   const sortOther = hotelObj.filter((val) => val.day !== day.toLowerCase());
   finalArr.push(...sortByDay, ...sortOther);
-
+  console.log(finalArr);
   for (let i = 0; i < finalArr.length; i++) {
     const span = document.createElement("span");
     span.innerHTML = `<div class="hotel">
