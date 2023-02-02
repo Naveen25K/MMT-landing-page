@@ -288,6 +288,9 @@ h2 {
   .container {
     padding: 10px;
   }
+  .hotels_container {
+    padding: 0px;
+  }
   .hotel_slider span {
     min-width: 80%;
   }
