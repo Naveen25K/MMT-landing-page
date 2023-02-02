@@ -205,6 +205,9 @@ h2 {
   width: 80%;
   font-size: var(--custom2);
 }
+.hotel_name > h2 {
+  padding-right: 20px;
+}
 
 .hotels_container .hotel_price {
   display: flex;
